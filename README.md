@@ -42,4 +42,4 @@ The main aim of this repository is to aid understanding of fundamentals and serv
 Clone this repository:
 
 ```bash
-git clone https://github.com/jimmymuthoni/Data-Structures-And-Algorithms/dsa.git
+git clone https://github.com/jimmymuthoni/Data-Structures-And-Algorithms
