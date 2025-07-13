@@ -11,5 +11,5 @@ class Solution:
 
 if __name__ == "__main__":
     solution = Solution()
-    print(solution.two_sum([2, 7, 11, 15], 9))
+    print(solution.two_sum([2, 7, 11, 15], 18))
 
