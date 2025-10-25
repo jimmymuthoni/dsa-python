@@ -1,17 +1,19 @@
-def linear_search(arr, target_value):
+def linear_search(arr, target):
     for i in range(len(arr)):
-        if arr[i] == target_value:
+        if arr[i] == target:
             return i
-        
     return -1
 
-arr = [34, 21, 23, 43, 10, 2, 3, 6, 8, 89, 34]
-target_value = 43
-
-result = linear_search(arr, target_value)
-
+array = [23,14,54,32,12,67,8,8]
+target = 12
+result = linear_search(array, target)
 if result != -1:
-    print(f"{target_value} found at index {result}.")
+    print(f"Value {target} found at index {result}")
 
 else:
-    print(f"{target_value} not found.")
+    print("Target value not found.")
+
+"""
+This algoritm runs with O(n) --> Worst case scenario we can go through
+the entire array before getting the target value
+"""
