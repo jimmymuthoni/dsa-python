@@ -4,10 +4,10 @@ import java.util.Map;
 class Solution {
     public int[] twoSum(int[] nums, int target) {
 
-        // HashMap to store numbers and their indices
+        // HashMap to store numbers and their indices.
         Map<Integer, Integer> map = new HashMap<>();
 
-        // Iterate through the array
+        // Iterate through the array.
         for (int i = 0; i < nums.length; i++) {
 
             // Difference needed to reach target
@@ -22,7 +22,7 @@ class Solution {
             map.put(nums[i], i);
         }
 
-        // No solution found
+        // No solution found 
         return new int[]{};
     }
 }
