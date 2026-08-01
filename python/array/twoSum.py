@@ -20,4 +20,8 @@ class Solution:
     
 if __name__ == "__main__":
     solution = Solution()
-    print(solution.two_sum([2,7,11,15],18))
+    print(solution.two_sum([11,7,2,15],9))
+
+
+#  time complexity: O(n)
+#  space complexity: O(n)
