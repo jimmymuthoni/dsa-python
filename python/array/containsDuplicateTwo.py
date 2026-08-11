@@ -1,3 +1,4 @@
+#hashmap solution
 from typing import List
 class Solution:
     def containsNearbyDuplicateTwo(self,nums:List[int], k:int)->bool:
@@ -22,3 +23,21 @@ Time complexity 0(n)
 Space complexity O(k)
 
 """
+
+#hashset solution
+class Solution:
+    def containsNearbyDuplicate(self, nums:List[int], k:int) -> bool:
+        num_set = set()
+        for i, num in enumerate(nums):
+            #if num ia alreay in the wwindow, duplicate found
+            if num in num_set:
+                return True
+            #add current number
+            num_set.add(num)
+            #keep only the last k elements
+            if len(num_set) > k:
+                num_set.remove(num[i - k])
+        return False
+if __name__ == "__main__":
+    sol = Solution()
+    print(sol.containsNearbyDuplicate([1, 2, 3, 4, 1], 4))
